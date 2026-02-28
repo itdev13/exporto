@@ -9,9 +9,12 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Export Messages - Data Export Tool for GoHighLevel",
+  title: "ExportKit - Data Export Tool for GoHighLevel",
   description:
     "The ultimate data export tool for GoHighLevel. Export conversations, SMS, emails, WhatsApp, Facebook & Instagram messages with advanced filtering. CSV & JSON formats.",
+  icons: {
+    icon: "/exportkit-icon.svg",
+  },
   keywords: [
     "GoHighLevel export",
     "export GHL conversations",

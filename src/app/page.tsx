@@ -58,7 +58,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="text-xl font-bold flex items-center gap-2">
-            <span className="text-2xl">📤</span> Export Messages
+            <img src="/exportkit-icon.svg" alt="ExportKit" className="w-8 h-8 rounded-lg" /> ExportKit
           </a>
 
           {/* Nav Links - Center */}
@@ -628,7 +628,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: '#ffffff' }}>
-                <span className="text-2xl">📤</span> Export Messages
+                <img src="/exportkit-icon.svg" alt="ExportKit" className="w-8 h-8 rounded-lg" /> ExportKit
               </h3>
               <p style={{ color: '#9ca3af' }}>
                 The ultimate data export tool for GoHighLevel.
