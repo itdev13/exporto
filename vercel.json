@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/ref/:code/:campaign",
+      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:code&campaign=:campaign",
+      "statusCode": 302
+    },
+    {
+      "source": "/ref/:code",
+      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:code",
+      "statusCode": 302
+    }
+  ]
+}
