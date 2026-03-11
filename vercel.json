@@ -1,13 +1,22 @@
 {
   "redirects": [
     {
-      "source": "/ref/:code/:campaign",
-      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:code&campaign=:campaign",
+      "source": "/",
+      "has": [
+        { "type": "query", "key": "install", "value": "exportKit" },
+        { "type": "query", "key": "source", "value": "(?<source>.*)" },
+        { "type": "query", "key": "campaign", "value": "(?<campaign>.*)" }
+      ],
+      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:source&campaign=:campaign",
       "statusCode": 302
     },
     {
-      "source": "/ref/:code",
-      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:code",
+      "source": "/",
+      "has": [
+        { "type": "query", "key": "install", "value": "exportKit" },
+        { "type": "query", "key": "source", "value": "(?<source>.*)" }
+      ],
+      "destination": "https://convoapi.vaultsuite.store/oauth/authorize?ref=:source",
       "statusCode": 302
     }
   ]
